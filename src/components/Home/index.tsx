@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, FC } from "react";
 import { useLoaderData } from "react-router-dom";
 
 import { Player } from "../../types/Player";
@@ -11,7 +11,7 @@ import { getTwoRandomsPlayers } from "../../utils/getTwoRandomsPlayers";
 
 type PlayersState = [Player, Player] | [];
 
-const Home = () => {
+const Home: FC<{}> = () => {
   const players = useLoaderData() as Player[];
 
   const [gamePlayers, setGamePlayers] = useState<PlayersState>([]);

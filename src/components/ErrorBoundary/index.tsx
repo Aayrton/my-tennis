@@ -4,8 +4,13 @@ import Header from "../Header";
 
 import "./index.scss";
 
-function ErrorBoundary() {
-  const error: any = useRouteError();
+interface Error {
+  statusText: string;
+  message: string;
+}
+
+const ErrorBoundary: React.FC<{}> = () => {
+  const error = useRouteError() as Error;
 
   return (
     <div className="ErrorBoundary">
@@ -17,6 +22,6 @@ function ErrorBoundary() {
       </div>
     </div>
   );
-}
+};
 
 export default ErrorBoundary;
