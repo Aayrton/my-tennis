@@ -9,6 +9,7 @@
 
   .versus {
     display: none;
+    font-weight: bold;
 
     @media screen and (min-width: 1024px) {
       display: block;
@@ -16,6 +17,7 @@
   }
 
   .versus-mobile {
+    font-weight: bold;
     margin-bottom: 20px;
 
     @media screen and (min-width: 1024px) {
