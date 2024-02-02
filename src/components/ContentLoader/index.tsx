@@ -3,7 +3,7 @@ import { CircularProgress } from "@mui/material";
 
 const ContentLoader: React.FC<{}> = () => {
   return (
-    <div className="home">
+    <div className="ContentLoader">
       <CircularProgress data-testid="content-loader" />
     </div>
   );

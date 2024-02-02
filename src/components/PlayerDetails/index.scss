@@ -1,0 +1,14 @@
+.PlayerDetails {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .InformationsContainer {
+    width: 100%;
+
+    .Country {
+      width: 30px;
+    }
+  }
+}

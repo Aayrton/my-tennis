@@ -1,0 +1,60 @@
+.PlayerCard {
+  padding: 5px;
+  width: 100%;
+
+  .AvatarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .PlayerCardContent {
+    padding: 0;
+
+    .FullName {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .Rank {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .StatsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+
+      .StatsTitle {
+        font-size: 13px;
+        text-align: left;
+        font-weight: bold;
+      }
+
+      .Stats {
+        font-size: 13px;
+        background-color: rgb(220, 223, 236);
+        border-radius: 3px;
+        list-style: none;
+        text-align: left;
+        padding: 10px 10px 0 10px;
+        margin: 10px 0 0 0;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .PlayerCardActions {
+    display: flex;
+    justify-content: right;
+
+    a {
+      color: grey;
+      text-decoration: none;
+    }
+  }
+}

@@ -18,24 +18,32 @@ const Home = () => {
 
   useEffect(() => {
     if (players.length) {
-      const lol = getTwoRandomsPlayers(players);
-      setGamePlayers(lol);
+      const newPlayers = getTwoRandomsPlayers(players);
+      setGamePlayers(newPlayers);
     }
   }, [players]);
 
   if (!gamePlayers.length) {
     return (
-      <div className="home">
+      <div className="Home">
         <ContentLoader />
       </div>
     );
   }
 
   return (
-    <div className="home">
-      <PlayerCard player={gamePlayers[0]} />
-      VS
-      <PlayerCard player={gamePlayers[1]} />
+    <div className="Home">
+      <h1>Welcome to EuroTennis !</h1>
+      <div className="versus">VS</div>
+      <div className="CardContainer">
+        <div className="CardWrapper">
+          <PlayerCard player={gamePlayers[0]} />
+        </div>
+        <div className="versus-mobile">VS</div>
+        <div className="CardWrapper">
+          <PlayerCard player={gamePlayers[1]} />
+        </div>
+      </div>
     </div>
   );
 };

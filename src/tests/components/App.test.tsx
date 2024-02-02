@@ -6,6 +6,6 @@ import { renderWithRouter } from "../../utils/renderWithRouter";
 
 it("should render without crashing", () => {
   renderWithRouter(<App />);
-  const title = screen.getByText(/EuroStat/i);
+  const title = screen.getByText(/EuroTennis/i);
   expect(title).toBeInTheDocument();
 });

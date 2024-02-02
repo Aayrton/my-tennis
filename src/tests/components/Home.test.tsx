@@ -23,8 +23,8 @@ describe("Home", () => {
     });
 
     await waitFor(() => {
-      const versus = screen.getByText(/VS/i);
-      expect(versus).toBeInTheDocument();
+      const versus = screen.getAllByText(/VS/i);
+      expect(versus).toHaveLength(2);
     });
   });
 });

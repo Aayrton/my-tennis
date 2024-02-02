@@ -4,14 +4,13 @@ import { Outlet, Link } from "react-router-dom";
 import Home from "./components/Home";
 
 import "./App.scss";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Link to="/">EuroStat</Link>
-      </header>
-      <div id="main">
+      <Header />
+      <div className="Main">
         <Outlet />
       </div>
     </div>
