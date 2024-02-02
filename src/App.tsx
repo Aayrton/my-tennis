@@ -1,16 +1,19 @@
-import React from 'react';
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
 
-import Home from './components/Home';
+import Home from "./components/Home";
 
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        My Tennis
+        <Link to="/">EuroStat</Link>
       </header>
-      <Home />
+      <div id="main">
+        <Outlet />
+      </div>
     </div>
   );
 }
