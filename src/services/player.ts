@@ -20,7 +20,7 @@ export const getPlayer: (playerId: number) => Promise<Player> = async (
     const player = players.find(({ id }) => id === playerId);
 
     if (typeof player === "undefined") {
-      throw "404";
+      throw new Error("404 Not Found");
     }
 
     return player;
