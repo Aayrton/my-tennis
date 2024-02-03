@@ -46,14 +46,19 @@ const PlayerDetails: React.FC<{}> = () => {
       <Card className="InformationsContainer">
         <CardContent>
           <InfoField label="Alias" value={shortname} />
-          <p>
-            Country:&nbsp;
-            <img
-              className="Country"
-              src={country.picture}
-              alt={`Flag of ${country.code}`}
-            />
-          </p>
+          <InfoField
+            label="Country"
+            value={
+              <p>
+                Country:&nbsp;
+                <img
+                  className="Country"
+                  src={country.picture}
+                  alt={`Flag of ${country.code}`}
+                />
+              </p>
+            }
+          />
           <InfoField label="Gender" value={sex} />
           <InfoField label="Rank" value={data.rank} />
           <InfoField label="Points" value={data.points} />
