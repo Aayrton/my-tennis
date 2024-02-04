@@ -49,14 +49,11 @@ const PlayerDetails: React.FC<{}> = () => {
           <InfoField
             label="Country"
             value={
-              <p>
-                Country:&nbsp;
-                <img
-                  className="Country"
-                  src={country.picture}
-                  alt={`Flag of ${country.code}`}
-                />
-              </p>
+              <img
+                className="Country"
+                src={country.picture}
+                alt={`Flag of ${country.code}`}
+              />
             }
           />
           <InfoField label="Gender" value={sex} />

@@ -3,6 +3,9 @@
 This is a simple React application for displaying tennis player information.
 
 Live Website: https://eurotennis.vercel.app/
+API repo: https://github.com/Aayrton/my-tennis-api
+
+_The backend part was not mandatory, but I found it interesting to go through with the complete integration_
 
 ## Getting Started
 
@@ -49,10 +52,11 @@ npm run test
 ### Built With
 
 - [React](https://reactjs.org/) - JavaScript library for building user interfaces.
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
+- [Jest](https://jestjs.io/fr/) - JavaScript Testing framework.
 - [Sass](https://sass-lang.com/) - CSS extension language.
 - [Material-UI](https://mui.com/) - React UI framework.
 - [React Router](https://reactrouter.com/) - Declarative routing for React.js.
-- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript.
 
 ### Acknowledgments
 

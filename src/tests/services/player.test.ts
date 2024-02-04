@@ -12,9 +12,7 @@ describe("Player Services", () => {
     it("should fetches players successfully", async () => {
       fetch.mockImplementationOnce(() =>
         Promise.resolve({
-          json: async () => ({
-            players: mockPlayers,
-          }),
+          json: async () => mockPlayers,
         })
       );
 
@@ -36,9 +34,7 @@ describe("Player Services", () => {
     it("should fetches player successfully", async () => {
       fetch.mockImplementationOnce(() =>
         Promise.resolve({
-          json: async () => ({
-            players: mockPlayers,
-          }),
+          json: async () => mockPlayers[1],
         })
       );
 
